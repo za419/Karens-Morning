@@ -6,11 +6,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBarStyle</item>
     </style>
 
     <style name="AppTheme.ActionBarStyle" parent="Widget.AppCompat.ActionBar">
-        <item name="android:titleTextStyle">@style/AppTheme.TitleTextStyle</item>
+        <item name="background">?attr/colorPrimary</item>
+        <item name="titleTextStyle">@style/AppTheme.TitleTextStyle</item>
     </style>
 
     <style name="AppTheme.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
