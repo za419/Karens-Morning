@@ -28,6 +28,6 @@ class MainActivity : AppCompatActivity() {
         calendar.set(Calendar.MINUTE, 30)
 
         am.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.timeInMillis,
-                (1000 * 60 * 60 * 24).toLong(), alarmIntent)
+                AlarmManager.INTERVAL_DAY, alarmIntent)
     }
 }
