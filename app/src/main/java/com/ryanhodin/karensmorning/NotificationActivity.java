@@ -23,5 +23,6 @@ public class NotificationActivity extends AppCompatActivity {
 		Intent result=new Intent(this, MainActivity.class);
 		a.setContentIntent(PendingIntent.getActivity(this, 0, result, 0));
 		((NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE)).notify(0, a.build());
+		finish();
 	}
 }
