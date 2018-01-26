@@ -19,6 +19,7 @@ public class NotificationActivity extends AppCompatActivity {
 		a.setSmallIcon(R.mipmap.ic_launcher);
 		a.setContentTitle("Good Morning");
 		a.setContentText("It is now morning.");
+		a.setAutoCancel(true);
 		Intent result=new Intent(this, MainActivity.class);
 		a.setContentIntent(PendingIntent.getActivity(this, 0, result, 0));
 		((NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE)).notify(0, a.build());
